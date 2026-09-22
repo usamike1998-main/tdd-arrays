@@ -192,7 +192,7 @@ export function findSpy(map) {
   // TODO
 
   for (let i = 0; i < map.length; i++) {
-    const words = map[i].split(",");
+    const words = map[i];
     for (let z = 0; z < words.length; z++) {
       if (words[z] === "spy") return [i, z];
     }
